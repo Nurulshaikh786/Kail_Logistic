@@ -21,63 +21,27 @@
 
     <body>
         <!-- Bootstrap Offcanvas Sidebar -->
-        <div class="offcanvas offcanvas-start d-none d-lg-block" tabindex="-1"
-            id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
-            <div class="offcanvas-header">
-                <!-- LOGICO Logo -->
-                <div class="sidebar-logo" id="sidebarOffcanvasLabel">
-                    <div class="logo-icon">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <span class="logo-text">LOGICO</span>
-                </div>
-                <button type="button" class="btn-close btn-close-white"
-                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <header>
+           <section class="position-relative">
+            <div class="container">
+                 <div class="offcanvas offcanvas-start "
+                tabindex="-1" id="offcanvas" aria-labelledby="offcanvaslabel"
+                data-bs-scroll="true" data-bs-backdrop="static" data-bs-theme="dark">
+
+                 <div class="offcanvas-btn position-relative  start-50 m-0 ms-2">
+                  <span type="button"
+                    class=" position-absolute"
+                    data-bs-dismiss="offcanvas" aria-label="Close"
+                    data-bs-target="#offcanvas" >
+                  <i class="fa-sharp fa-solid fa-xmark fs-4 "></i>
+                 </span>
+              </div>
             </div>
-            <div class="offcanvas-body">
-                <!-- Location Section -->
-                <div class="sidebar-section">
-                    <h3>Our Location</h3>
-                    <p>USA, New York - 1060<br> Str. First Avenue 1</p>
-                </div>
-
-                <!-- Call Center Section -->
-                <div class="sidebar-section">
-                    <h3>Call Center</h3>
-                    <p>+ 1-800 100 975 20 34<br> + (123) 1800-234-567</p>
-                </div>
-
-                <!-- Email Section -->
-                <div class="sidebar-section">
-                    <h3>Email</h3>
-                    <a href="mailto:logico@mail.co"
-                        class="email-link">logico@mail.co</a>
-                </div>
-
-                <!-- Social Network Section -->
-                <div class="sidebar-section">
-                    <h3>Social network</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- Get in touch button -->
-                <div class="sidebar-footer">
-                    <button class="btn-get-in-touch">
-                        Get in touch
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </div>
+           
             </div>
-        </div>
+           </section>
+
+        </header>
 
         <!-- Main Navigation -->
 
@@ -92,7 +56,7 @@
                             <!-- Sidebar Toggle Button (Desktop - before logo) -->
                             <span class="btn offcanvas-btn d-none d-lg-block"
                                 data-bs-toggle="offcanvas"
-                                data-bs-target="#sidebarOffcanvas"
+                                data-bs-target="#offcanvas"
                                 aria-controls="sidebarOffcanvas">
                                 <img src="./assets/img/image copy.png" alt>
                             </span>
@@ -263,27 +227,32 @@
                                 <!-- Right side elements -->
                                 <div class="navbar-right">
                                     <!-- Phone Number -->
-                                    <div class="phone-number d-none  d-xl-block">
+                                    <div
+                                        class="phone-number d-none  d-xl-block">
                                         <i class="fas fa-phone"></i>
                                         <span>+1 800 642 73 98</span>
                                     </div>
 
                                     <!-- Search Icon -->
-                                 <!-- Search Button -->
-<div class="search-container">
-  <button class="nav-icon-btn" onclick="openSearch()">
-    <i class="fas fa-search"></i>
-  </button>
-</div>
+                                    <!-- Search Button -->
+                                    <div class="search-container">
+                                        <button class="nav-icon-btn"
+                                            onclick="openSearch()">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
 
-<!-- Search Overlay -->
-<div id="searchOverlay" class="search-overlay">
-  <div class="search-box">
-    <input type="text" id="searchInput" class="search-input" placeholder="Search for products, categories...">
-    <span class="close-btn-inside" onclick="closeSearch()">&times;</span>
-  </div>
-</div>
-
+                                    <!-- Search Overlay -->
+                                    <div id="searchOverlay"
+                                        class="search-overlay">
+                                        <div class="search-box">
+                                            <input type="text" id="searchInput"
+                                                class="search-input"
+                                                placeholder="Search for products, categories...">
+                                            <span class="close-btn-inside"
+                                                onclick="closeSearch()">&times;</span>
+                                        </div>
+                                    </div>
 
                                     <!-- User Icon -->
                                     <button class="nav-icon-btn">

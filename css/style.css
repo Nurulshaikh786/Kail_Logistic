@@ -20,9 +20,28 @@ body {
     outline: none;
 }
 
-.sidebar-toggle-btn:hover .grid-box {
-    color: white;
+.offcanvas .offcanvas-btn{
+    width: 50px;
+    height: 100%;
+    background-image: url(../assets/img/offcanvas-cross.jpg);
+    margin: 20px;
+    border-radius: 25px;
+    left: 100% !important;
 }
+
+
+.fa-xmark{
+    padding: 16px;
+    text-align: center;
+    
+}
+
+.offcanvas{
+    border-radius: 40px;
+    margin: 10px 20px;
+    
+}
+
 
 @media (min-width: 992px) {
     .sidebar-toggle-btn {
