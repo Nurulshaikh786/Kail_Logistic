@@ -30,10 +30,10 @@
 
                  <div class="offcanvas-btn position-relative  start-50 m-0 ms-2 p-3 rounded-top-4 rounded-bottom-">
                   <span type="button"
-                    class=" position-absolute"
+                    class=" position-absolute "
                     data-bs-dismiss="offcanvas" aria-label="Close"
                     data-bs-target="#offcanvas" >
-                  <i class="fa-sharp fa-solid fa-xmark fs-4 "></i>
+                    <button class="close-btn "></button>
                  </span>
               </div>
             </div>
@@ -246,11 +246,15 @@
                                     <div id="searchOverlay"
                                         class="search-overlay">
                                         <div class="search-box">
+                                            <label for="Search" class="search-label">Search</label>
                                             <input type="text" id="searchInput"
                                                 class="search-input"
-                                                placeholder="Search for products, categories...">
-                                            <span class="close-btn-inside"
-                                                onclick="closeSearch()">&times;</span>
+    
+                                            >
+                                            <i class="fas fa-search search-icon"></i>
+
+                                            <button class="close-btn close-btn-inside"
+                                                onclick="closeSearch()"></button>
                                         </div>
                                     </div>
 
