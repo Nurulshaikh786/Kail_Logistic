@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+    .sidebar-toggle-btn {
+        display: flex !important;
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-right .phone-number {
+        display: none !important;
+    }
+
+    .navbar-right {
+        gap: 0.5rem;
+    }
+
+    .btn-track-shipment {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Reorder logo and hamburger menu on mobile */
+    .container-fluid {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-logo-first {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .mobile-menu-last {
+        order: 3;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .navbar-right {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .search-box {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hamburger-btn {
+        margin-right: 0.5rem;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .sidebar-content {
+        width: 300px;
+    }
+
+    .nav-icon-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .btn-track-shipment {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-navbar {
+        padding: 0.5rem 0;
+    }
+
+    .main-navbar .container-fluid {
+        padding: 0 1rem;
+    }
+
+    .sidebar-content {
+        width: 280px;
+        padding: 1.5rem;
+    }
+
+    .navbar-right {
+        gap: 0.25rem;
+    }
+
+    .btn-track-shipment {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .offcanvas {
+        width: 280px !important;
+    }
+
+    .mobile-nav-offcanvas {
+        width: 95% !important;
+        max-width: 350px;
+    }
+
+    .offcanvas-header,
+    .offcanvas-body {
+        padding: 1.5rem;
+    }
+
+    .mobile-contact-section {
+        padding: 1rem;
+    }
+
+    .search-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .search-input-full {
+        padding: 1.2rem 3.5rem 1.2rem 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:992px){
+    .navbar-toggler{
+        margin-left: 500px;
+        justify-content: end !important;
+    }
+}
