@@ -587,6 +587,9 @@ body {
 .mobile-get-touch-btn:hover {
     background-color: #555;
 }
+.btn{
+    column-rule: ;
+}
 
 
 /* Offcanvas responsive sizing */
